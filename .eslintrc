@@ -31,6 +31,9 @@
   ],
   "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint", "tailwindcss"],
   "rules": {
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
+    "quotes": ["error", "single"],
+    "no-undef": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
