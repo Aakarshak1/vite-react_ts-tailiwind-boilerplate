@@ -18,6 +18,5 @@ export default defineConfig({
     css: false, // Do not process css files (is slow)
     environment: 'jsdom',
     setupFiles: 'setupTest.ts',
-    include: ['**/test.{ts,tsx}'],
   },
 });
