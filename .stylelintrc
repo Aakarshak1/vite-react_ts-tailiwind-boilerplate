@@ -1,0 +1,81 @@
+{
+  "extends": "stylelint-config-standard",
+  "overrides": [
+    {
+      "files": ["**/*.less"],
+      "customSyntax": "postcss-less"
+    }
+  ],
+  "rules": {
+    "alpha-value-notation": "number",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "/^@.*/",
+          "value",
+          "at-root",
+          "content",
+          "debug",
+          "each",
+          "else",
+          "error",
+          "for",
+          "function",
+          "if",
+          "include",
+          "mixin",
+          "return",
+          "warn",
+          "while",
+          "extend",
+          "use",
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen"
+        ]
+      }
+    ],
+    "block-no-empty": true,
+    "color-function-notation": "legacy",
+    "color-no-invalid-hex": true,
+    "color-named": "never",
+    "comment-empty-line-before": "always",
+    "comment-no-empty": true,
+    "color-hex-case": "upper",
+    "color-hex-length": "long",
+    "declaration-block-no-duplicate-properties": [true, { "ignore": ["consecutive-duplicates-with-different-values"] }],
+    "declaration-block-no-shorthand-property-overrides": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "keyframe-declaration-no-important": true,
+    "length-zero-no-unit": null,
+    "media-feature-name-no-unknown": true,
+    "no-descending-specificity": null,
+    "no-duplicate-at-import-rules": true,
+    "no-empty-source": true,
+    "no-invalid-double-slash-comments": true,
+    "no-duplicate-selectors": true,
+    "property-no-vendor-prefix": null,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["composes", "/^mso-/"],
+        "ignoreSelectors": ["/^:export.*/", "/^:import.*/"]
+      }
+    ],
+    "rule-empty-line-before": null,
+    "selector-class-pattern": null,
+    "selector-pseudo-element-colon-notation": "single",
+    "selector-attribute-quotes": "always",
+    "string-no-newline": true,
+    "selector-type-no-unknown": [true, { "ignoreTypes": ["/^ (mat |md| fa) -/"], "ignore": ["custom-elements"] }],
+    "selector-pseudo-element-no-unknown": [true, { "ignorePseudoElements": ["ng-deep", "v-deep"] }],
+    "selector-pseudo-class-no-unknown": [true, { "ignorePseudoClasses": ["Local", "global", "export", "import"] }],
+    "unit-no-unknown": [true, { "ignoreUnits": ["x"] }],
+    "value-no-vendor-prefix": null
+  }
+}
