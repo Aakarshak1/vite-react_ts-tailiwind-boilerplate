@@ -72,5 +72,11 @@
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "n/no-missing-import": "off"
-  }
+  },
+  "overrides": [
+    {
+      "extends": ["plugin:@typescript-eslint/disable-type-checked"],
+      "files": ["**/*.{js,ts,cjs}"]
+    }
+  ]
 }
