@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
 import react from '@vitejs/plugin-react';
@@ -13,4 +14,14 @@ export default defineConfig({
       failOnError: false,
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        chunkFileNames: '[name]-[hash].js',
+        manualChunks: {
+          react: ['react', 'react-dom'],
+        },
+      },
+    },
+  },
 });
