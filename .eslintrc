@@ -21,17 +21,37 @@
     }
   },
   "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "love",
     "eslint:recommended",
     "eslint-config-prettier",
+    "plugin:n/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:tailwindcss/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
     "plugin:css/recommended",
+    "plugin:promise/recommended",
     "plugin:testing-library/react"
   ],
-  "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint", "css", "tailwindcss", "testing-library"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier",
+    "@typescript-eslint",
+    "css",
+    "tailwindcss",
+    "testing-library",
+    "jsx-a11y",
+    "import",
+    "promise",
+    "vitest"
+  ],
   "rules": {
     "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
     "quotes": ["error", "single"],
@@ -47,6 +67,10 @@
     "tailwindcss/no-contradicting-classname": "error",
     "css/color-hex-style": "off",
     "css/no-shorthand-property-overrides": "off",
-    "css/named-color": 0
+    "css/named-color": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx", ".ts"] }],
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "n/no-missing-import": "off"
   }
 }
