@@ -1,11 +1,5 @@
 {
   "extends": "stylelint-config-standard",
-  "overrides": [
-    {
-      "files": ["**/*.less"],
-      "customSyntax": "postcss-less"
-    }
-  ],
   "rules": {
     "alpha-value-notation": "number",
     "at-rule-no-unknown": [
