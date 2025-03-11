@@ -18,6 +18,15 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".config.js"]
+      },
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
     }
   },
   "extends": [
@@ -69,9 +78,19 @@
     "css/no-shorthand-property-overrides": "off",
     "css/named-color": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx", ".ts"] }],
-    "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
-    "n/no-missing-import": "off"
+    "n/no-missing-import": "off",
+    "react/function-component-definition": 0,
+    "import/no-unresolved": [2, { "ignore": ["^@react-native"] }],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "ignorePackages": true,
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "overrides": [
     {

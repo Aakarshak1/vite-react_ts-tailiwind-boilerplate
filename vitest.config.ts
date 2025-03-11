@@ -1,11 +1,11 @@
-//https://vitest.dev/config/
+// https://vitest.dev/config/
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  server: { 
-    watch: { 
-      ignored: ['node_modules'] 
-    } 
+  server: {
+    watch: {
+      ignored: ['node_modules'],
+    },
   },
   test: {
     globals: true,
