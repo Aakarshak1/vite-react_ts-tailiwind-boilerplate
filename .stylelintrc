@@ -38,7 +38,6 @@
     "color-named": "never",
     "comment-empty-line-before": "always",
     "comment-no-empty": true,
-    "color-hex-case": "upper",
     "color-hex-length": "long",
     "declaration-block-no-duplicate-properties": [true, { "ignore": ["consecutive-duplicates-with-different-values"] }],
     "declaration-block-no-shorthand-property-overrides": true,
